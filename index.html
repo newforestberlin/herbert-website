@@ -102,13 +102,33 @@
       padding: 40px;
     }
 
+    header {
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      height: 100%;
+      background-image: url(/static/images/red-stripe-pattern.png),
+                        url(/static/images/white-stripe-pattern.png),
+                        url(/static/images/blue-stripe-pattern.png);
+      background-repeat: no-repeat;
+      background-position: 0 0, 20% 0, 50% 0;
+      background-size: 20% 100%, 50% 100%, 100% 100%;
+    }
+
+    .number {
+      display: inline-block;
+      width: 40%;
+      max-width: 340px;
+      margin: 30px 0;
+    }
+
   </style>
 </head>
 <body>
 
-  <aside class="time-left">
-    <h1>Herbert</h1>
-  </aside>
+  <header>
+    <img src="/static/images/number.svg" alt="" class="number">
+  </header><!-- /header -->
 
   <article>
     <p class="date">April 5th 2014</p>
@@ -145,6 +165,10 @@
 
     <p>The gang Jens, Ricki, Ole &amp; Herbert</p>
   </article>
+
+  <aside class="time-left">
+    <h1>Herbert</h1>
+  </aside>
 
 </body>
 </html>
