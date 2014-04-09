@@ -140,34 +140,44 @@
       animation-timing-function: linear;
     }
 
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
+    @-ms-keyframes spin {
+        from { -ms-transform: rotate(0deg); }
+        to { -ms-transform: rotate(360deg); }
     }
-    to {
-        transform:rotate(360deg);
+    @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
     }
-}
+    @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+
+    .twitter-follow-button {
+      position: fixed;
+      top: 45px;
+      right: 40px;
+    }
 
   </style>
 </head>
 <body>
 
-  <header>
+  <aside class="time-left">
+    <h1>Herbert</h1>
+  </aside>
+
+  <!-- <header>
     <img src="/static/images/number.svg" alt="" class="number">
-  </header><!-- /header -->
+  </header> -->
 
   <article>
     <p class="date">April 5th 2014</p>
@@ -209,9 +219,8 @@
     <p><center><img src="/static/images/herbert-herbert.jpg" alt="" width="70%"></center></p>
   </article>
 
-  <aside class="time-left">
-    <h1>Herbert</h1>
-  </aside>
+  <a href="https://twitter.com/readherbert" class="twitter-follow-button" data-show-count="false">Follow @readherbert</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
 </html>
