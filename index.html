@@ -64,6 +64,10 @@
       margin: 40px;
     }
 
+    img.herbert-mockup {
+      margin-top: 40px;
+    }
+
     span.source {
       font-family:"Futura-CondensedExtraBold", "Trebuchet MS", Arial, sans-serif;
       font-size: 32px;
@@ -148,6 +152,57 @@
       text-transform: uppercase;
     }
 
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+      p.date {
+        font-size: 14px;
+      }
+
+      .time-left h1 {
+        text-indent: -5px;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      h1 + p {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      img {
+        margin: 0;
+        width: 100% !important;
+      }
+
+      img.herbert-mockup {
+        margin-top: 20px;
+      }
+
+      .twitter-follow-button, .beta-signup-button {
+        position: inherit;
+        text-align: center;
+        top: inherit;
+        right: inherit;
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        max-width: 170px;
+      }
+
+      .email-input {
+        width: 219px;
+        margin-bottom: 10px;
+      }
+
   </style>
 </head>
 <body>
@@ -169,7 +224,7 @@
 
     <p>Every zine is available offline. You can even create a zine when you are offline and as soon as we catch a connection, we will push it to you.</p>
 
-    <p><center><img src="static/images/herbert-mockup.png" alt="Herbert iPhone Mockups" width="90%" style="margin:40px 0 0 0"></center></p>
+    <p><center><img src="static/images/herbert-mockup.png" alt="Herbert iPhone Mockups" width="90%" class="herbert-mockup"></center></p>
 
     <p>In the future we will let you connect with services like Pocket or Instapaper as well.</p>
 
@@ -185,12 +240,14 @@
     <p>The gang Jens, Ricki, Ole &amp; Herbert</p>
 
     <p><center><img src="static/images/herbert-herbert.jpg" alt="" width="70%"></center></p>
-  </article>
 
-  <a href="https://twitter.com/readherbert" class="twitter-follow-button" data-show-count="false">Follow @readherbert</a>
+      <a href="https://twitter.com/readherbert" class="twitter-follow-button" data-show-count="false">Follow @readherbert</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
   <a href="#fieldEmail" title="Sign up for Beta" class="beta-signup-button">Sign up for the beta</a>
+  </article>
+
+
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
